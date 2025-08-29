@@ -111,19 +111,19 @@ class Main{
         }
         
         for(int row=0; row<n; row++){
-            if(leftCol[row] == false && upperDiagnol[row+col] == false && lowerDiagnol[n-1+col-row] == false){
+            if(leftCol[row] == false && upperDiagnol[n-1+col-row] == false && lowerDiagnol[col+row] == false){
                 
                 board[row][col] = 'Q';
                 leftCol[row] = true;
-                upperDiagnol[row+col] = true;
-                lowerDiagnol[n-1+col-row] = true;
+                upperDiagnol[n-1+col-row] = true;
+                lowerDiagnol[row+col] = true;
                 
                 fun(n, col+1, ans, board, leftCol, upperDiagnol, lowerDiagnol);
                 
                 board[row][col] = '.';
                 leftCol[row] = false;
-                upperDiagnol[row+col] = false;
-                lowerDiagnol[n-1+col-row] = false;
+                upperDiagnol[n-1+col-row] = false;
+                lowerDiagnol[row+col] = false;
             }
         }
     
