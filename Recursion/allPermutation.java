@@ -55,7 +55,7 @@ class Main{
             fun(arr, idx+1, ans);
             swap(i, idx, arr);
         }
-        for(int i=0; i<arr.length; i++);
+        
     }
     
     public static void swap(int i, int j, int arr[]){
