@@ -20,6 +20,7 @@ class Solution {
                 level++;
 
                 for(String x : usedOnLevel) set.remove(x);
+                usedOnLevel.clear();
             }
 
             String word = curr.get(curr.size()-1);
