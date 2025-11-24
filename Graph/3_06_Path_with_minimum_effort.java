@@ -45,7 +45,7 @@ class Solution {
                 int col = curr.y + delcol[k];
 
                 if(row>=0 && row<n && col>=0 && col<m){
-                    int newEffort = Math.max(curr.diff, Math.abs(heights[row][col] - dist[curr.x][curr.y]));
+                    int newEffort = Math.max(curr.diff, Math.abs(heights[row][col] - heights[curr.x][curr.y]));
 
                     if(newEffort < dist[row][col]){
                         dist[row][col] = newEffort;
