@@ -38,7 +38,7 @@ class Solution {
         Arrays.sort(arr);
         
         int l = 0;
-        int h = arr[n-1] - l;
+        int h = arr[n-1] - arr[0];
         
         while(l <= h){
             int mid = l + (h-l)/2;
