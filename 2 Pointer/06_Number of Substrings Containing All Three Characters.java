@@ -48,7 +48,7 @@ class Solution {
     }
 }
 
-// cimpler solution
+// Simpler solution
 class Solution {
     public int numberOfSubstrings(String s) {
         int n = s.length();
